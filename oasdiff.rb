@@ -5,11 +5,11 @@
 class Oasdiff < Formula
   desc ""
   homepage "https://github.com/oasdiff/oasdiff"
-  version "1.11.4"
+  version "1.11.5"
 
   on_macos do
-    url "https://github.com/oasdiff/oasdiff/releases/download/v1.11.4/oasdiff_1.11.4_darwin_all.tar.gz"
-    sha256 "8c5feb834b8a97beb78fa8f360656a3ed70a03dcfff7902a7c23706da85b738c"
+    url "https://github.com/oasdiff/oasdiff/releases/download/v1.11.5/oasdiff_1.11.5_darwin_all.tar.gz"
+    sha256 "14c7bd0b4e66d0962ca733229b5a5d7948291e140208f5f71ce64eb9014551c3"
 
     def install
       bin.install "oasdiff"
@@ -18,15 +18,15 @@ class Oasdiff < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/oasdiff/oasdiff/releases/download/v1.11.4/oasdiff_1.11.4_linux_amd64.tar.gz"
-      sha256 "b93e61ec48a746841051903b1c196717fac11ffd1f70dd1c9f714515590d876a"
+      url "https://github.com/oasdiff/oasdiff/releases/download/v1.11.5/oasdiff_1.11.5_linux_amd64.tar.gz"
+      sha256 "bfa670cc774a552a093869b3a0e2905e096996e45085db8ee6fe08c5f428928e"
       def install
         bin.install "oasdiff"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/oasdiff/oasdiff/releases/download/v1.11.4/oasdiff_1.11.4_linux_arm64.tar.gz"
-      sha256 "641fc765d009243b6e5abdedbaf1b1ac14aeb4728e0ecf8f7e17b4d2956eb01a"
+      url "https://github.com/oasdiff/oasdiff/releases/download/v1.11.5/oasdiff_1.11.5_linux_arm64.tar.gz"
+      sha256 "8cfe59849e9e382085e76a83d55a1db868cb7fb7574569c04a09142b5b3de403"
       def install
         bin.install "oasdiff"
       end
