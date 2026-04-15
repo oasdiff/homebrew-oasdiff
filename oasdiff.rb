@@ -5,11 +5,11 @@
 class Oasdiff < Formula
   desc ""
   homepage "https://github.com/oasdiff/oasdiff"
-  version "2.2.0-openapi31.beta.4"
+  version "2.2.0-openapi31.beta.5"
 
   on_macos do
-    url "https://github.com/oasdiff/oasdiff/releases/download/v2.2.0-openapi31.beta.4/oasdiff_2.2.0-openapi31.beta.4_darwin_all.tar.gz"
-    sha256 "c267336357b4cb9d8adc43f8dc0b5fb28aa7dce6bda08a2200ed118a63363599"
+    url "https://github.com/oasdiff/oasdiff/releases/download/v2.2.0-openapi31.beta.5/oasdiff_2.2.0-openapi31.beta.5_darwin_all.tar.gz"
+    sha256 "810bebe85674b6d0968f945903ae655a2709187667932cd11644dd957c9df794"
 
     define_method(:install) do
       bin.install "oasdiff"
@@ -18,15 +18,15 @@ class Oasdiff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oasdiff/oasdiff/releases/download/v2.2.0-openapi31.beta.4/oasdiff_2.2.0-openapi31.beta.4_linux_amd64.tar.gz"
-      sha256 "4c15367109c255833bd6d9f19c1f6877a948143de69044b12cf3dfc843153a24"
+      url "https://github.com/oasdiff/oasdiff/releases/download/v2.2.0-openapi31.beta.5/oasdiff_2.2.0-openapi31.beta.5_linux_amd64.tar.gz"
+      sha256 "fd3d4400a19fedfbcf29d7c1971b35d36ca2ae16870d1c41de5a34bc2a95c8ff"
       define_method(:install) do
         bin.install "oasdiff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oasdiff/oasdiff/releases/download/v2.2.0-openapi31.beta.4/oasdiff_2.2.0-openapi31.beta.4_linux_arm64.tar.gz"
-      sha256 "69e441d29f292f9e0519a67ff48720870aeb39c625c05117571f115d37565f9e"
+      url "https://github.com/oasdiff/oasdiff/releases/download/v2.2.0-openapi31.beta.5/oasdiff_2.2.0-openapi31.beta.5_linux_arm64.tar.gz"
+      sha256 "651167225960ff62c627a76736a9c891e8c3b3e443003a72a610b229bd0a895b"
       define_method(:install) do
         bin.install "oasdiff"
       end
